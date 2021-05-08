@@ -6,6 +6,8 @@ wsb開発
 
 ## HTML
 - html_test
+- アウトライン確認
+    - https://gsnedders.html5.org/outliner/
 
 ## CSS
 - css_test
