@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ja">
 
 <head>
@@ -6,9 +7,155 @@
 </head>
 
 <body>
-	<h1>header1</h1>
-	<h2>header2</h2>
-	<p>paragraph</p>
+	<section>
+		<section>
+			<h1>header1</h1>
+		</section>
+		<section>
+			<h2>header2-1</h2>
+			<p>paragraph2-1</p>
+			<p>paragraph2-1-2</p>
+		</section>
+		<section>
+			<h3>header3-1</h3>
+			<p>paragraph3-1</p>
+			<p>paragraph3-1-2</p>
+		</section>
+		<section>
+			<h3>header3-2</h3>
+			<p>paragraph3-2</p>
+			<p>paragraph3-2-2</p>
+		</section>		
+	</section>
+
+	<section>
+		<h1>文字参照</h1>
+		<p>&lt; &gt; &quot; &amp; &copy; &yen;</p>
+	</section>
+
+	<section>
+		<!-- id -->
+		<h3 id="id01"> link id 01 </h3>
+		<h3 id="id02"> link id 02 </h3>
+	</section>
+
+	<section>
+		<h1>line break</h1>
+		<p>
+			paragraph2-2-1<br>
+			paragraph2-2-2<br>
+			paragraph2-2-3
+		</p>
+	</section>
+
+	<section>
+		<h1>emphasis, strong</h1>
+		<p>
+			paragraph1, <em>paragraph2</em>, paragraph3<br>
+			paragraph1, <strong>paragraph2</strong>, paragraph3<br>
+		</p>
+	</section>
+
+	<section>
+		<h1>unordered list, ordered list</h1>
+		<ul>
+			<li>list1</li>
+			<li>list2</li>
+			<li>list3</li>
+		</ul>
+		<ol>
+			<li>list1</li>
+			<li>list2</li>
+			<li>list3</li>
+		</ol>
+	</section>
+
+	<section>
+		<h1>description list</h1>
+		<dl>
+			<dt>term1</dt>
+			<dd>definition1</dd>
+			<dt>term2</dt>
+			<dd>definition2</dd>
+			<dt>term3</dt>
+			<dd>definition3</dd>
+		</dl>
+	</section>
+
+	<section>
+		<h1>hyper link</h1>
+		<p><a href="hyper link reference URL" target="_blank">anchor text</a></p>
+		<ol>
+			<li><a href="#id01">go to id 01</a></li>
+			<li><a href="#id02">go to id 02</a></li>
+		</ol>
+	</section>
+
+	<section>
+		<h1>image</h1>
+		<p><img src="../img/chino.jpg" alt="chino img"></p>
+	</section>
+
+	<section>
+		<h1>table</h1>
+		<table border="1">
+			<thead>
+				<tr>
+					<th>header1</th>
+					<th>header2</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>data1-1</td>
+					<td>data1-2</td>
+				</tr>
+				<tr>
+					<td>data2-1</td>
+					<td>data2-2</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>footer</td>
+					<td>footer</td>
+				</tr>
+			</tfoot>
+		</table>
+	</section>
+
+	<section>
+		<h1>interactive form</h1>
+		<form action="action" method="POST">
+			<dl>
+				<dt>user name</dt>
+				<dd><input type="text" name="your name"></dd>
+				<dt>user password</dt>
+				<dd><input type="password" name="your password"></dd>
+				<dt>radio</dt>
+				<dd>
+					<ul>
+						<li><input type="radio" name="radio1" value="value1">radio1-value1</li>
+						<li><input type="radio" name="radio1" value="value2">radio1-value2</li>
+						<li><input type="radio" name="radio1" value="value3">radio1-value3</li>
+						<li><input type="radio" name="radio2" value="value1">radio2-value1</li>
+						<li><input type="radio" name="radio2" value="value2">radio2-value2</li>
+						<li><input type="radio" name="radio2" value="value3">radio2-value3</li>
+					</ul>
+				</dd>
+				<dt>check box</dt>
+				<dd>
+					<ul>
+						<li><input type="checkbox" name="checkbox1" value="value1">value1</li>
+						<li><input type="checkbox" name="checkbox1" value="value2">value2</li>
+						<li><input type="checkbox" name="checkbox1" value="value3">value3</li>
+					</ul>
+				</dd>
+			</dl>
+			<p><input type="submit" value="submit text"></p>
+		</form>
+	</section>
+
 </body>
 
 </html>
