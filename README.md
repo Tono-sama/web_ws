@@ -16,3 +16,19 @@ wsb開発
 
 ## JavaScript
 - js_test
+
+## React
+- CRA
+    - 新規プロジェクトのスケルトンを作成してくれる
+    - npx create-react-app (project name) --template=typescript
+
+## 言語バージョン管理
+- anyenv
+- exec $SHELL -l
+- yarn
+    - yarn upgrade-interactive [--latest]
+        - package.jsonの依存パッケージの最新バージョンインストール、package.jsonも上書き
+
+## ブラウザのショートカットキー
+- ctrl + u
+    - 表示中のページのhtmlソースコードを新規タブで表示
