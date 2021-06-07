@@ -20,7 +20,10 @@ wsb開発
 ## React
 - CRA
     - 新規プロジェクトのスケルトンを作成してくれる
-    - npx create-react-app (project name) --template=typescript
+        - npx create-react-app (project name) --template=typescript
+    - 実行(ブラウザを開いて編集内容を逐次更新して表示)
+        - cd (project name)
+        - yarn start
 
 ## 言語バージョン管理
 - anyenv
