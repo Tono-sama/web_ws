@@ -23,6 +23,7 @@ const App = () => {
   console.log(data)
   // console.log(data.data_list)
 
+  
   return (
     <div className="App">
       {/* <header className="App-header">
