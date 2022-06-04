@@ -6,6 +6,8 @@
         - メインファイルはserver.py
         - 適当なREST APIを用意
     - TypeScript
+        - baseにしたテンプレート
+            - https://github.com/notakaos/typescript-node-base
         - メインファイルはserver.ts
         - REST APIを叩く(HTTPクライアントとしてaxiosを使用)
 
