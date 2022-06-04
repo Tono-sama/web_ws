@@ -1,9 +1,13 @@
 # project001
 
 ## backend
-- メインファイルはserver.py
-- 適当なREST APIを用意
+- pythonで簡易的に作るものと，tsでがっつり処理する2つのサーバを用意
+    - python
+        - メインファイルはserver.py
+        - 適当なREST APIを用意
+    - TypeScript
+        - メインファイルはserver.ts
+        - REST APIを叩く(HTTPクライアントとしてaxiosを使用)
 
 ## frontend
-- メインファイルはserver.ts
-- REST APIを叩く(HTTPクライアントとしてaxiosを使用)
+- TODO: angularか何かで作る？
