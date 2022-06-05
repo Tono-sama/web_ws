@@ -10,7 +10,7 @@ class PostHandler(http.server.BaseHTTPRequestHandler):
         print("path: ", self.path)
 
         # path毎に処理分け(固定レスポンス)
-        if(self.path == '/api/helloworld1'):
+        if(self.path == '/api/hogehoge'):
             # レスポンス
             res_body = '{"response": "helloworld"}' # 固定レスポンス
             print("res_body:")
@@ -70,6 +70,6 @@ class PostHandler(http.server.BaseHTTPRequestHandler):
 
 if __name__ == '__main__':
     import http.server
-    server = http.server.HTTPServer(('localhost', 8080), PostHandler)
+    server = http.server.HTTPServer(('localhost', 4000), PostHandler)
     print ("Starting server, use <Ctrl-C> to stop")
     server.serve_forever()
