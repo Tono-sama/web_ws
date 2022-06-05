@@ -2,7 +2,9 @@ import { OtherServiceHandlerIF } from "../models/otherServiceHandlers/otherServi
 
 class AxiosHandler implements OtherServiceHandlerIF {
     request(data: any): any {
-        console.log("data", data);
-        return "";
+        console.log("[AxiosHandler] request() data:", data);
+        const res = "";
+        console.log("[AxiosHandler] request() res=", res);
+        return res;
     }
 }
