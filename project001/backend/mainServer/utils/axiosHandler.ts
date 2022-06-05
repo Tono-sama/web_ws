@@ -1,6 +1,6 @@
 import { OtherServiceHandlerIF } from "../models/otherServiceHandlers/otherServiceHanderIF"
 
-class AxiosHandler implements OtherServiceHandlerIF {
+export class AxiosHandler implements OtherServiceHandlerIF {
     request(data: any): any {
         console.log("[AxiosHandler] request() data:", data);
         const res = "";
