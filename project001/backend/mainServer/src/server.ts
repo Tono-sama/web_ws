@@ -1,4 +1,4 @@
-import { HogeRequestConverter } from "../models/requestConverters/hogeRequestConverter"
+import { HogeRequestConverter } from "./models/requestConverters/hogeRequestConverter"
 const express = require('express');
 
 const app = express();
