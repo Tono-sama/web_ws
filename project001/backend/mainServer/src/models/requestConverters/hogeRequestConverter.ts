@@ -1,17 +1,11 @@
 import { HogeRequestHandler } from "../../controllers/express/hogeRequestHandler";
-import { AxiosHandler } from "../../utils/axiosHandler";
-// import { OtherServiceHandlerIF } from "../otherServiceHandlers/otherServiceHanderIF";
 
 export class HogeRequestConverter {
-    hogeRequestHandler: HogeRequestHandler | null = null;
-    axiosHandler: AxiosHandler | null = null;
-    // otherServiceHandlerIF: OtherServiceHandlerIF | null = null;
+    hogeRequestHandler: HogeRequestHandler;
 
     constructor(_app: any) {
         this.hogeRequestHandler = new HogeRequestHandler(_app);
-        this.axiosHandler = new AxiosHandler();
+        // GET メソッド '/api/hoge3' => '/api/hogehoge'
+        this.hogeRequestHandler.setFunction('GET', '/api/hoge3', '/api/hogehoge');
     }
-
-    // hoge request => hoge axios request に変換
-    // hoge axios response => hoge response に変換して返す
 }
