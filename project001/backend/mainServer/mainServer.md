@@ -31,8 +31,9 @@ node "OtherServer(python)" as OtherServer {
 }
 
 HogeRequestConverter <|-- MainClass
-HogeRequestHandler <|-- HogeRequestConverter
+HogeRequestConverter <|-- HogeRequestHandler
 OtherServiceHandlerIF <|-- HogeRequestConverter
+AxiosHandler <|-- HogeRequestConverter
 OtherServiceHandlerIF <|-- OtherServer
 OtherServiceHandlerIF <|-- AxiosHandler
 OtherServiceHandlerIF <|-- HogeClientHandler
