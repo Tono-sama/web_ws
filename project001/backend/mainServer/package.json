@@ -1,11 +1,11 @@
 {
-  "name": "typescript-node-base",
+  "name": "main-server",
   "version": "0.1.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "dist/server.js",
   "scripts": {
-    "dev": "ts-node src/index.ts",
-    "dev:watch": "ts-node-dev --respawn src/index.ts",
+    "dev": "ts-node src/server.ts",
+    "dev:watch": "ts-node-dev --respawn src/server.ts",
     "clean": "rimraf dist/*",
     "tsc": "tsc",
     "build": "npm-run-all clean tsc",
