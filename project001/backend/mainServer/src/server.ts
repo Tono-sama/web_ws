@@ -1,5 +1,10 @@
-function hello(name: string): string {
-  return `Hello, ${name}!`;
-}
+import { HogeRequestConverter } from "../models/requestConverters/hogeRequestConverter"
+const express = require('express');
 
-console.log(hello("TypeScript"));
+const app = express();
+
+// HTTPリクエストの処理を登録
+const hogeRequestConverter = new HogeRequestConverter(app);
+
+console.log('server start!');
+app.listen(3000);
