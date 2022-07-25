@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TodoItem } from '../interface/todo-item';
+import { TODOITEMS } from '../test/test-data/mock-todo-items';
 
 @Component({
   selector: 'app-todo-items',
@@ -8,16 +9,16 @@ import { TodoItem } from '../interface/todo-item';
 })
 export class TodoItemsComponent implements OnInit {
 
-  todoItem: TodoItem = {
-    id: 0,
-    title: "dummy todo item",
-    detail: "comment",
-    checked: false
-  }
+  todoItems = TODOITEMS;
+  selectedItem?: TodoItem;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSelect(item: TodoItem) {
+    this.selectedItem = item;
   }
 
 }

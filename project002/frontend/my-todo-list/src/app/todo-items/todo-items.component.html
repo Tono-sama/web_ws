@@ -1,6 +1,13 @@
-<h2>{{todoItem.title}}</h2>
-<div><span>id: </span>{{todoItem.id}}</div>
-<div><span>detail: </span>{{todoItem.detail}}</div>
-<div>
-  <input id="detail" [(ngModel)]="todoItem.detail" placeholder="detail">
-</div>
+<h2>TODO Items</h2>
+<ul class="todo-items">
+  <li *ngFor="let item of todoItems">
+    <h2>{{item.title}}</h2>
+    <button type="button" (click)="onSelect(item)">
+      <span class="bagde">{{item.id}}</span>
+      <span class="name">{{item.title}}</span>
+    </button>
+    <div>
+      <input id="detail" [(ngModel)]="item.detail" placeholder="detail">
+    </div>
+  </li>
+</ul>
