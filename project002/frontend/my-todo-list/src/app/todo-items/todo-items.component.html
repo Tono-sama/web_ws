@@ -1,13 +1,11 @@
 <h2>TODO Items</h2>
 <ul class="todo-items">
   <li *ngFor="let item of todoItems">
-    <h2>{{item.title}}</h2>
-    <button type="button" (click)="onSelect(item)">
-      <span class="bagde">{{item.id}}</span>
-      <span class="name">{{item.title}}</span>
-    </button>
     <div>
-      <input id="detail" [(ngModel)]="item.detail" placeholder="detail">
+      <button type="button" (click)="onSelect(item)">
+        ID:{{item.id}}  {{item.title}}
+      </button>
     </div>
   </li>
 </ul>
+<app-todo-item-detail [todoItem]="selectedItem"></app-todo-item-detail>
