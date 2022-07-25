@@ -12,7 +12,10 @@ export class TodoItemService {
   constructor() { }
 
   getTodoItems(): Observable<TodoItem[]> {
-    const todoItems = of(TODOITEMS);
-    return todoItems;
+    return of(TODOITEMS);
+  }
+
+  getTodoItem(id: number): Observable<TodoItem | undefined> {
+    return of(TODOITEMS.find(item => item.id===id));
   }
 }

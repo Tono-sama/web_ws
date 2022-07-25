@@ -5,7 +5,9 @@
       <button type="button" (click)="onSelect(item)">
         ID:{{item.id}}  {{item.title}}
       </button>
+      <a routerLink="/items/{{item.id}}">
+        {{item.title}}
+      </a>
     </div>
   </li>
 </ul>
-<app-todo-item-detail [todoItem]="selectedItem"></app-todo-item-detail>
